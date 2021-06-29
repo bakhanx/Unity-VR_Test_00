@@ -7,14 +7,17 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Camera camera;
     [SerializeField] private Text moveText;
+    [SerializeField] private Text itemText;
     [SerializeField] private float range;
     [SerializeField] private GameObject player;
+
     private Rigidbody myRigid;
     private RaycastHit hitInfo;
     private float distance;
     private Transform target;
     private bool isMove;
     private Vector3 targetPos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -73,5 +76,16 @@ public class PlayerController : MonoBehaviour
 
 
         }
+    }
+
+    private void ItemTextOn()
+    {
+        itemText.gameObject.SetActive(true);
+        itemText.text = "Drink this liquid";
+    }
+
+    private void ItemTextOff()
+    {
+        itemText.gameObject.SetActive(false);
     }
 }

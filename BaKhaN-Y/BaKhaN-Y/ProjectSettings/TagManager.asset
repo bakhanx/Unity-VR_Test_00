@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - MovePoint
+  - Item
   layers:
   - Default
   - TransparentFX
