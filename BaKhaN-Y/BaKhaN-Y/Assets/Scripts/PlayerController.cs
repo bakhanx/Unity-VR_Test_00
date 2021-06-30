@@ -88,4 +88,6 @@ public class PlayerController : MonoBehaviour
     {
         itemText.gameObject.SetActive(false);
     }
+
+    //liquid : screen brightness/opacity down
 }
